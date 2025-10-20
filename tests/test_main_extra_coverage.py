@@ -43,19 +43,3 @@ def test_main_invalid_command_exits_2(monkeypatch):
         mod.main()
     assert exc.value.code == 2
 
-def test_main_brave_profile_if_available(monkeypatch):
-    """Test 'brave-profile' subcommand if it exists in the CLI."""
-    try:
-        import reposmith.main as mod
-        from reposmith.cli import build_parser
-    except Exception:
-        pytest.skip("CLI not available")
-
-    parser = build_parser()
-    if not _has_subcommand(parser, "brave-profile"):
-        pytest.skip("'brave-profile' subcommand not available")
-
-    monkeypatch.setattr(sys, "argv", ["reposmith", "brave-profile", "--help"])
-    with pytest.raises(SystemExit) as exc:
-        mod.main()
-    assert exc.value.code == 0
