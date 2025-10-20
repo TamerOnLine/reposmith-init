@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](https://semver.org/).
 
 ---
+## [0.4.1] - 2025-10-20
+### Added
+- 
+
+### Changed
+- 
+
+### Fixed
+- 
+
+---
+
 ## [0.4.0] - 2025-10-20
 ### Added
 - 

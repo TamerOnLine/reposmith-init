@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reposmith-tol"
-version = "0.4.0"
+version = "0.4.1"
 description = "Portable Python project bootstrapper with venv, uv, Brave profile, VS Code, and CI integration."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -32,6 +32,11 @@ classifiers = [
   "Topic :: Software Development :: Build Tools",
   "Topic :: Utilities"
 ]
+dependencies = [
+    "build>=1.3.0",
+    "python-dotenv>=1.1.1",
+    "twine>=6.2.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/TamerOnLine/RepoSmith"
@@ -43,6 +48,7 @@ Discussions = "https://github.com/TamerOnLine/RepoSmith/discussions"
 
 [project.scripts]
 reposmith = "reposmith.cli:main"
+on = "on.__main__:main"
 
 [tool.setuptools]
 include-package-data = true
@@ -52,4 +58,4 @@ reposmith = ["**/*.ps1", "**/*.sh", "**/*.json"]
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["reposmith*"]
+include = ["reposmith*", "on"]
