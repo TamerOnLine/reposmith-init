@@ -2,10 +2,12 @@
 
 [![PyPI](https://img.shields.io/pypi/v/reposmith-tol?style=flat-square&logo=pypi)](https://pypi.org/project/reposmith-tol/)
 ![Python](https://img.shields.io/pypi/pyversions/reposmith-tol?style=flat-square)
-![License](https://img.shields.io/github/license/TamerOnLine/RepoSmith?style=flat-square)
-![CI](https://img.shields.io/github/actions/workflow/status/TamerOnLine/RepoSmith/ci.yml?branch=main&label=CI&logo=github&style=flat-square)
+![License](https://img.shields.io/github/license/TamerOnLine/reposmith-init?style=flat-square)
+![CI](https://img.shields.io/github/actions/workflow/status/TamerOnLine/reposmith-init/ci.yml?branch=main&label=CI&logo=github&style=flat-square)
 ![Downloads](https://img.shields.io/pypi/dm/reposmith-tol?style=flat-square)
 [![Sponsor](https://img.shields.io/badge/Sponsor-💖-pink?style=flat-square)](https://github.com/sponsors/TamerOnLine)
+
+
 
 > **RepoSmith-tol** builds complete, ready-to-code Python projects —  
 > virtual env, dependencies with `uv`, VS Code setup, CI, and automation — all in **one command**.
@@ -128,8 +130,9 @@ Licensed under [MIT](LICENSE) © 2025 **Tamer Hamad Faour (@TamerOnLine)**
 
 ## 💬 Community & Support
 
-- 🐞 [Report a Bug](https://github.com/TamerOnLine/RepoSmith/issues/new?template=bug.yml)  
-- 💡 [Suggest a Feature](https://github.com/TamerOnLine/RepoSmith/issues/new?template=feature.yml)  
-- 💬 [Join Discussions](https://github.com/TamerOnLine/RepoSmith/discussions)  
+- 🐞 [Report a Bug](https://github.com/TamerOnLine/reposmith-init/issues/new?template=bug.yml)  
+- 💡 [Suggest a Feature](https://github.com/TamerOnLine/reposmith-init/issues/new?template=feature.yml)  
+- 💬 [Join Discussions](https://github.com/TamerOnLine/reposmith-init/discussions)  
 - 💖 [Support via GitHub Sponsors](https://github.com/sponsors/TamerOnLine)  
-- 📧 info@tameronline.com  
+- 📧 info@tameronline.com
+

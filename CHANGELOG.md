@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](https://semver.org/).
 
 ---
+## [0.4.2] - 2025-10-20
+### Added
+- 
+
+### Changed
+- Updated all repository links from **RepoSmith** → **reposmith-init**.
+- Cleaned metadata in `pyproject.toml` (removed Brave references).
+- Updated badges and support links in `README.md`.
+
+### Fixed
+- 
+
+---
+
 ## [0.4.1] - 2025-10-20
 ### Added
 - 
