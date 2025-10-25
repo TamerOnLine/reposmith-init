@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reposmith-tol"
-version = "0.4.2"
+version = "0.4.3"
 description = "Portable Python project bootstrapper with venv, uv, VS Code, and CI integration."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -13,18 +13,18 @@ authors = [
   { name = "Tamer Hamad Faour", email = "info@tameronline.com" }
 ]
 
+license = "MIT"
+license-files = ["LICENSE"]
+
 keywords = [
   "bootstrap", "venv", "uv", "vscode",
   "license", "scaffold", "cli", "project-generator"
 ]
 
-license = { text = "MIT" }  # Alternative: license = { file = "LICENSE" }
-
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Console",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
@@ -35,7 +35,7 @@ classifiers = [
 
 # Keep only the dependencies actually required at runtime
 dependencies = [
-  "python-dotenv>=1.1.1"  # Remove if not imported in runtime
+  "python-dotenv>=1.1.1"
 ]
 
 [project.optional-dependencies]
@@ -64,11 +64,13 @@ on = "on.__main__:main"
 
 [tool.setuptools]
 include-package-data = true
-license-files = ["LICENSE"]
 
 [tool.setuptools.package-data]
 reposmith = ["**/*.ps1", "**/*.sh", "**/*.json"]
 
+[tool.setuptools.package-dir]
+"" = "src"
+
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 include = ["reposmith*", "on"]
